@@ -114,7 +114,7 @@ const DashBoard: React.FC = () => {
     <div className="mt-10">
       {/* Table Container */}
       <div className="w-full shadow-md  mt-10 p-4 bg-white rounded-md">
-        <div className="flex  gap-3 border  bg-gray-100  w-fit my-5 rounded">
+        <div className="flex  gap-3 border  bg-gray-100  w-full my-5 rounded">
           <div className=" items-center  justify-center py-1.5 pl-2 rounded-full ">
             <SearchIcon
               size={18}
@@ -134,15 +134,13 @@ const DashBoard: React.FC = () => {
           {loading && <p className="text-center text-gray-500">Loading...</p>}
           {error && <p className="text-center text-red-500">{error}</p>}
           <div className="overflow-x-auto">
-            <div className="ag-theme-alpine h-[350px] min-w-[600px]">
+            <div className="ag-theme-alpine h-[500px] min-w-[600px]">
               <AgGridReact
                 gridOptions={gridOptions}
                 rowData={filteredData}
                 suppressRowTransform={true}
                 pagination={true}
-                paginationPageSize={5}
                 domLayout="normal"
-                paginationPageSizeSelector={[5, 10, 20]}
                 suppressHorizontalScroll={false}
                 defaultColDef={{ resizable: true }}
               />
