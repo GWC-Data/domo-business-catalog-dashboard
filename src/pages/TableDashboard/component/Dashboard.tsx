@@ -64,7 +64,7 @@ const DashBoard: React.FC = () => {
     flex: 0,
     cellStyle: { whiteSpace: "nowrap" },
     cellRenderer: ({ value }: { value: string }) => (
-      <div className="font-semibold capitalize">{value}</div>
+      <div className="font-semibold">{value}</div>
     ),
   };
 
@@ -72,7 +72,7 @@ const DashBoard: React.FC = () => {
     headerName: "Company",
     field: "company",
     cellRenderer: ({ value }: { value: string }) => (
-      <div className="font-semibold capitalize">{value}</div>
+      <div className="font-semibold">{value}</div>
     ),
   };
 
@@ -80,7 +80,7 @@ const DashBoard: React.FC = () => {
     headerName: "Position",
     field: "position",
     cellRenderer: ({ value }: { value: string }) => (
-      <div className="font-semibold capitalize">{value}</div>
+      <div className="font-semibold">{value}</div>
     ),
   };
 
@@ -88,7 +88,7 @@ const DashBoard: React.FC = () => {
     headerName: "Location",
     field: "location",
     cellRenderer: ({ value }: { value: string }) => (
-      <div className="font-semibold capitalize">{value}</div>
+      <div className="font-semibold">{value}</div>
     ),
   };
   const columnDefs: ColDef<any>[] = [
