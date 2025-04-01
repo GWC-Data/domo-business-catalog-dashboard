@@ -41,9 +41,12 @@ const Card: React.FC = () => {
     };
   };
 
-  const { nameCount, companyCount, emailDomainCount } = data
+  const { nameCount } = data
     ? UserData(data)
-    : { nameCount: 0, companyCount: 0, emailDomainCount: 0 };
+    : { nameCount: 0 };
+  // const { nameCount, companyCount, emailDomainCount } = data
+  //   ? UserData(data)
+  //   : { nameCount: 0, companyCount: 0, emailDomainCount: 0 };
 
   return (
     <div className="">
